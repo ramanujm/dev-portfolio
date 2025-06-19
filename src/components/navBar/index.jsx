@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaReact } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+import { SiIrobot } from "react-icons/si";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
@@ -55,7 +56,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <FaReact size={30} />
+            <SiIrobot size={30} />
           </Link>
         </div>
         <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>
