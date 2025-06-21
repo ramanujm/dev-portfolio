@@ -2,26 +2,25 @@ import React from "react";
 import "./styles.scss";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import { FaCode, FaDatabase, FaDev, FaMobileAlt } from "react-icons/fa";
+import { FaDatabase, FaDev, FaConfluence, FaJira } from "react-icons/fa";
+import { SiSpringboot } from "react-icons/si";
 import {
-  SiSpring,
-  SiAngular,
-  SiJavascript,
-  SiJava,
-  SiSpringboot,
-} from "react-icons/si";
-import {
-  DiMongodb,
   DiAngularSimple,
   DiAndroid,
   DiApple,
-  DiAtom,
   DiReact,
-  DiJava,
+  DiBitbucket,
+  DiGithubBadge,
+  DiNodejsSmall,
+  DiVisualstudio,
+  DiHtml5,
+  DiCss3,
 } from "react-icons/di";
-import { IoLogoNodejs } from "react-icons/io5";
-import { GrCloud } from "react-icons/gr";
+import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineJava } from "react-icons/ai";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import intellij from "./../../assets/images/intellij.svg";
+import swaggerhub from "./../../assets/images/swagger.png";
 
 const personalInfo = [
   {
@@ -43,7 +42,7 @@ const personalInfo = [
 ];
 
 const aboutText =
-  "I am a  Dev lead/Full stack developer with over 14+ years of experience in various areas of software development and IT technologies. Specialized in Angular, Java, Spring Boot, Struts2, Hibernate, Spring MVC, Oracle. Enthusiastic, self-motivated, ability to work in a team, manage a group of people, manage projects and clients, develop and implement new software codes, cope well within a fast-paced setting, communicate effectively at all levels, and interact supportive within a team environment.";
+  "I am Full stack developer with over 14+ years of experience in various areas of software development and IT technologies. Specialized in Angular, Java, Spring Boot, Struts2, Hibernate, Spring MVC, Oracle. Enthusiastic, self-motivated, ability to work in a team, manage a group of people, manage projects and clients, develop and implement new software codes, cope well within a fast-paced setting, communicate effectively at all levels, and interact supportive within a team environment.";
 
 const About = () => {
   return (
@@ -69,39 +68,159 @@ const About = () => {
           </ul>
         </div>
         <div className="about__content__servicesWrapper">
+          <h3>Tools and Technologies</h3>
           <div className="about__content__servicesWrapper__innerContent">
             <div>
-              <FaDev size={60} color="var(--yellow-theme-main-color)" />
+              <FaDev
+                size={60}
+                color="#669bbc"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
 
             <div>
               <DiAngularSimple
                 size={60}
-                color="var(--yellow-theme-main-color)"
+                color="#c3002f"
+                className="about__content__servicesWrapper__innerContent__icon"
               />
             </div>
 
             <div>
-              <DiAndroid size={60} color="var(--yellow-theme-main-color)" />
+              <DiAndroid
+                size={60}
+                color="#a5be00"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
 
             <div>
-              <DiReact size={60} color="var(--yellow-theme-main-color)" />
+              <DiReact
+                size={60}
+                color="#61DAFB"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
 
             <div>
-              <FaDatabase size={60} color="var(--yellow-theme-main-color)" />
+              <FaDatabase
+                size={60}
+                color="#8d99ae"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
             <div>
-              <SiSpringboot size={60} color="var(--yellow-theme-main-color)" />
+              <SiSpringboot
+                size={60}
+                color="#6DB33F"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
 
             <div>
-              <DiApple size={60} color="var(--yellow-theme-main-color)" />
+              <DiApple
+                size={60}
+                color="#A2AAAD "
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
 
             <div>
-              <AiOutlineJava size={60} color="var(--yellow-theme-main-color)" />
+              <AiOutlineJava
+                size={60}
+                color="#f89820"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiBitbucket
+                size={60}
+                color="#205081"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiGithubBadge
+                size={60}
+                color="#253858"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+
+            <div>
+              <BiLogoSpringBoot
+                size={60}
+                color="#329453"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiVisualstudio
+                size={60}
+                color="#2684ff"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiNodejsSmall
+                size={60}
+                color="#a7c957"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiHtml5
+                size={60}
+                color="#F06529"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <DiCss3
+                size={60}
+                color="#E34C26"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <FaConfluence
+                size={60}
+                color="#2684ff"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <FaJira
+                size={60}
+                color="#2684ff"
+                
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <img
+                src={intellij}
+                alt="intellij"
+                height={60}
+                width={60}
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <img
+                src={swaggerhub}
+                alt="swaggerhub"
+                height={60}
+                width={60}
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
+            </div>
+            <div>
+              <IoLogoJavascript
+                size={60}
+                color="#F7DF1E"
+                className="about__content__servicesWrapper__innerContent__icon"
+              />
             </div>
           </div>
         </div>
