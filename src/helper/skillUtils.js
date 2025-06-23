@@ -121,7 +121,7 @@ export const skillsData = [
         ],
     },
     {
-        label: "Tools & Technologies",
+        label: "Tools",
         data: [
             {
                 skillName: "Github",

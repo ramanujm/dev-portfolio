@@ -33,7 +33,7 @@ function App() {
           <Route path="/skill" element={<Skill />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<div>404 Not Found</div>} />
+          {/* <Route path="*" element={<div>404 Not Found</div>} /> */}
         </Routes>
       </div>
 

@@ -2,7 +2,16 @@ import React from "react";
 import "./styles.scss";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import { FaDatabase, FaDev, FaConfluence, FaJira } from "react-icons/fa";
+import {
+  FaDatabase,
+  FaDev,
+  FaConfluence,
+  FaJira,
+  FaFacebook,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+} from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
 import {
   DiAngularSimple,
@@ -66,6 +75,38 @@ const About = () => {
               </li>
             ))}
           </ul>
+          <div className="about__content__personalWrapper__socialMedia">
+            <div>
+              <a
+                href="https://www.facebook.com/ramanuj.mishra.18"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={30} color="#3B5998" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/mishraramanuj"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={30} color="#0077B5" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/ramanujm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub size={30} color="#181717" />
+              </a>
+            </div>
+            <div>
+              <FaTwitter size={30} color="#1DA1F2" />
+            </div>
+          </div>
         </div>
         <div className="about__content__servicesWrapper">
           <h3>Tools and Technologies</h3>
@@ -193,7 +234,6 @@ const About = () => {
               <FaJira
                 size={60}
                 color="#2684ff"
-                
                 className="about__content__servicesWrapper__innerContent__icon"
               />
             </div>
