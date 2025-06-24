@@ -4,14 +4,14 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import "./styles.scss";
 import emailjs from "@emailjs/browser";
 
-// Replace with your EmailJS service ID, template ID, and public key
-const YOUR_SERVICE_ID = "service_3yvxm0u"; // Replace with your EmailJS service ID
-const YOUR_TEMPLATE_ID = "template_1trkrij"; // Replace with your EmailJS template ID
-const YOUR_PUBLIC_KEY = "e936Lf3I6amsoEW12"; // Replace with your EmailJS public key
+
 
 const Contact = () => {
   const form = useRef();
-
+// Replace with your EmailJS service ID, template ID, and public key
+  const YOUR_SERVICE_ID = "service_3yvxm0u"; // Replace with your EmailJS service ID
+  const YOUR_TEMPLATE_ID = "template_1trkrij"; // Replace with your EmailJS template ID
+  const YOUR_PUBLIC_KEY = "e936Lf3I6amsoEW12"; // Replace with your EmailJS public key
   const sendEmail = (e) => {
     e.preventDefault();
 
